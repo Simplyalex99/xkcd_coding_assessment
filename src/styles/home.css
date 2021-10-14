@@ -1,0 +1,107 @@
+#hero {
+  height: 600px;
+  width: 100%;
+}
+
+.hero-grid-container {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  margin: 0 auto;
+  align-self: center;
+  align-content: center;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .hero-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .text-center {
+    text-align: center;
+  }
+}
+
+.heading {
+  font-size: 3.8em;
+}
+.subheading {
+  font-size: 2.5em !important;
+}
+
+.left .heading {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.left .subheading {
+  margin: 0;
+  padding: 0;
+}
+.left .description {
+  margin-bottom: 2.5em;
+}
+
+.cta-btns-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .cta-btns-container {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+    gap: 10px;
+  }
+}
+
+.image-grid-container {
+  display: grid;
+  grid-template-areas:
+    "item1  item1 item3 item3"
+    "item1  item1 item3 item3"
+    "item2  item2 item3 item3 "
+    "item2  item2 item3 item3";
+}
+
+.comic-img {
+  height: 150px;
+}
+.img-3 {
+  height: 300px;
+  max-width: 100%;
+}
+
+.grid-item-1 {
+  grid-area: item1;
+}
+.xa {
+  height: 200px;
+
+  display: block;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 0.01%,
+      rgba(255, 255, 255, 0.441) 0.01%,
+      rgba(249, 250, 252, 0.9) 61.55%,
+      rgba(1, 92, 247, 0.9) 61.56%,
+      rgba(0, 91, 248, 0.9) 61.57%,
+      rgba(7, 8, 9, 0.9) 61.57%,
+      rgba(255, 255, 255, 0.9) 61.58%
+    ),
+    url("../images/comicstrip_math.png");
+}
+.grid-item-2 {
+  grid-area: item2;
+}
+.grid-item-3 {
+  grid-area: item3;
+}
+@media (max-width: 900px) {
+  .image-grid-container {
+    display: none;
+  }
+}

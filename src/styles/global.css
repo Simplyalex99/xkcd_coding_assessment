@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+:root {
+  --bg-blue-color: #39417e;
+  --bg-white-color: #fff;
+}
+
 * {
   font-family: "Shadows Into Light Two", cursive;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -12,7 +18,20 @@ body {
   margin: 0 auto;
 }
 
+.btn-primary {
+  background-color: var(--bg-blue-color);
+  color: var(--bg-white-color);
+  padding: 1em 1.9em 1em 1.9em;
+  border: none;
+  border-radius: 5px;
+}
 .btn-secondary {
   padding: 5px;
-  align-self: center;
+}
+.btn-secondary-outline {
+  padding: 0.9em 1.9em 0.9em 1.9em;
+  color: var(--bg-blue-color);
+  border: 2px solid var(--bg-blue-color);
+  background: var(--bg-white-color);
+  border-radius: 5px;
 }
