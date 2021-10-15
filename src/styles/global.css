@@ -20,13 +20,14 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--bg-blue-color);
+  background-color: #0c0c0c;
   color: var(--bg-white-color);
   border: none;
   border-radius: 5px;
 }
 .btn-primary:hover {
   background-color: #515784;
+  cursor: pointer;
 }
 
 .btn-secondary-outline {
@@ -38,6 +39,7 @@ body {
 .btn-secondary-outline:hover {
   color: white;
   background: var(--bg-blue-color);
+  cursor: pointer;
 }
 
 .text-center {
