@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A coding assessment case study based on Cyber City Comics.
 
-## Available Scripts
+## Technical Approach:
 
-In the project directory, you can run:
+- Redesign: Upon careful study, experimenting of wireframes and mockups and review of user feedback, I decided to redesign the currrent website
+  with a fun and cartoony theme , enhanced UX/UI design, along with new features and keep the current functionality of the website
+  to provide more ease of use of the app for current users. Also marketed the website to attract new users. Also keeping in mind accessibility.
+- Implementation: I decided to go with react-framework since it is light weight, fast to do this app and powerful for
+  re-useable components. I split down the sections of the pages and components into their proper folders, and the main features/components of the website were the comic strips and navigation, and the same for the pages (comic strip page with the id in url and home page).
+  Along the way implementing the figma design I also addded new functionality such as icons for easier navigation.
+  I implemented a re-usable hook for sending request to the API. I also implemented a heroku app which acts as proxy server to send request to the API to prevent CORS issue.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Challenges: Due to time contraint with other activities, I was not able to implement everything from figma design or do as more as I would like.
+  One of the challenges doing this was learning new technologies such as Figma, and finding a suitable design. In addition, CORS policy issue was encountered.
+- Conclusion: There are rooms for improvement as always, such as having to send a request everytime to go to the next comic strip is not the best for performance. This could be improved by storing the data in local storage or pre-fetching some data and only send request to needed data.
+  Also, the design of the website could be improved.
+- Note: If I had more time, I would implement comic page counter to show how many users have seen the comic. This could be done
+  by 1) storing the data in database and adding a field "views". Then everytime the data is requested from server, and displayed on the client
+  or UI we can increment its count. We could use express for this as the backend and mongoDB. Or 2) if the api already contains some form of endpoint to get views.
