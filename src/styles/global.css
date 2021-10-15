@@ -25,12 +25,19 @@ body {
   border: none;
   border-radius: 5px;
 }
+.btn-primary:hover {
+  background-color: #515784;
+}
 
 .btn-secondary-outline {
   color: var(--bg-blue-color);
   border: 2px solid var(--bg-blue-color);
   background: var(--bg-white-color);
   border-radius: 5px;
+}
+.btn-secondary-outline:hover {
+  color: white;
+  background: var(--bg-blue-color);
 }
 
 .text-center {
