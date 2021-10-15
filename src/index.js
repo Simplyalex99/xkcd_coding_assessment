@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Home } from "./pages/index";
+import { Home, Comic } from "./pages/index";
 import { Header } from "./components/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
@@ -9,10 +9,11 @@ function App() {
       <Router>
         <Header></Header>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             {" "}
             <Home></Home>
           </Route>
+          <Route exact path="/:id" component={Comic}></Route>
         </Switch>
       </Router>
     </>
