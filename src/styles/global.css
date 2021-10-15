@@ -20,13 +20,13 @@ body {
 }
 
 .btn-primary {
-  background-color: #0c0c0c;
+  background-color: var(--bg-blue-color);
   color: var(--bg-white-color);
   border: none;
   border-radius: 5px;
 }
 .btn-primary:hover {
-  background-color: #515784;
+  background-color: #0c0c0c;
   cursor: pointer;
 }
 
