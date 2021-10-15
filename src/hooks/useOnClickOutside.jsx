@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-// Just used random snippet for useOnClickOutside for now if you want I can just revert it back it's same *shrug*
 export const useOnClickOutside = ({ ref, handler }) => {
   useEffect(() => {
     const listener = (event) => {
@@ -16,7 +15,7 @@ export const useOnClickOutside = ({ ref, handler }) => {
 
     document.addEventListener(`mousedown`, listener);
     document.addEventListener(`touchstart`, listener);
-
+    // the following prevents data leak
     return () => {
       document.removeEventListener(`mousedown`, listener);
       document.removeEventListener(`touchstart`, listener);

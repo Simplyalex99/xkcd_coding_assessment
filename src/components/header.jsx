@@ -9,7 +9,7 @@ const Navigation = () => {
     <ul className="navigation" role="navigation">
       {NavigationItems.map((item, index) => {
         return (
-          <li key={index} className="navigation-link">
+          <li role="link" key={index} className="navigation-link">
             {index == NavigationItems.length - 1 ? (
               <a className="navigation-link-cta" href={item.url}>
                 {item.name}
@@ -40,7 +40,11 @@ export const Header = () => {
         </div>
 
         {/* Medium and small screens */}
-        <div className="hamburger-menu" onClick={() => setIsOpen(true)}>
+        <div
+          aria-label="Mobile Accessibility Navigation Dropdown"
+          className="hamburger-menu"
+          onClick={() => setIsOpen(true)}
+        >
           <HamburgerMenuIcon></HamburgerMenuIcon>
         </div>
         <div ref={sidebarRef} className={isOpen ? "sidebar-menu" : "hidden"}>

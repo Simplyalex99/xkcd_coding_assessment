@@ -1,7 +1,10 @@
-#hero {
-  height: 600px;
+.hero {
+  height: 700px;
   width: 100%;
+  margin-bottom: 4em;
 }
+
+/* hero section */
 
 .hero-grid-container {
   padding-top: 70px;
@@ -17,9 +20,6 @@
   .hero-grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .text-center {
-    text-align: center;
-  }
 }
 
 .heading {
@@ -30,8 +30,8 @@
 }
 
 .left .heading {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 .left .subheading {
@@ -47,6 +47,12 @@
   width: 50%;
   justify-content: space-between;
 }
+.cta-btns-container .btn-primary {
+  padding: 1em 1.9em 1em 1.9em;
+}
+.cta-btns-container .btn-secondary-outline {
+  padding: 0.9em 1.9em 0.9em 1.9em;
+}
 @media (max-width: 900px) {
   .cta-btns-container {
     flex-direction: column;
@@ -56,7 +62,7 @@
   }
 }
 
-.image-grid-container {
+.img-grid-container {
   display: grid;
   grid-template-areas:
     "item1  item1 item3 item3"
@@ -68,6 +74,10 @@
 .comic-img {
   height: 150px;
 }
+.comic-feature {
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .img-3 {
   height: 300px;
   max-width: 100%;
@@ -76,7 +86,7 @@
 .grid-item-1 {
   grid-area: item1;
 }
-.xa {
+.img-linear-gradient {
   height: 200px;
 
   display: block;
@@ -101,7 +111,56 @@
   grid-area: item3;
 }
 @media (max-width: 900px) {
-  .image-grid-container {
+  .img-grid-container {
     display: none;
+  }
+}
+
+/* comic strip section */
+
+.comic-strip-container {
+  padding-top: 2em;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+.comic-strip-grid-item {
+  grid-column: 2/4;
+}
+
+.comic-strip-btn-container {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.comic-strip-btn-container .btn-primary,
+.comic-strip-btn-container .btn-secondary-outline {
+  padding: 0.5em 1.9em 0.5em 1.9em;
+}
+@media (max-width: 900px) {
+  .comic-strip-btn-container .btn-primary,
+  .comic-strip-btn-container .btn-secondary-outline {
+    margin-left: 10px;
+  }
+}
+
+.loading-animation-container {
+  top: 0;
+  left: 0;
+  display: grid;
+  justify-content: center;
+}
+
+.left-arrow,
+.right-arrow {
+  align-self: center;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .left-arrow {
+    transform: translateX(70%);
   }
 }
