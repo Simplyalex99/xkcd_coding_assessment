@@ -10,7 +10,8 @@ A coding assessment case study based on Cyber City Comics. To use app please vis
 - Implementation: I decided to go with react-framework since it is light weight, fast to do this app and powerful for
   re-useable components. I split down the sections of the pages and components into their proper folders, and the main features/components of the website were the comic strips and navigation, and the same for the pages (comic strip page with the id in url and home page).
   Along the way implementing the figma design I also addded new functionality such as icons for easier navigation.
-  I implemented a re-usable hook for sending request to the API. I also implemented a heroku app which acts as proxy server to send request to the API to prevent CORS issue.
+  I implemented a re-usable hook for sending request to the API. I also implemented a heroku app which acts as proxy server to send request to the API to prevent CORS issue. Lastly, as for the code logic for the comic strip, the getRandomComic() method generates a random number ID from the minumum ID or 1 to the maximum
+  which is the latest comic. The getPreviousComic() and getNextComic() method will also contain code logic to decrement/increment the current comic ID and make it valid to then get an ID that can be passed to the hook to get the data. This hook called useFetchComic interacts with the API and allows for a flexible state using reducer  similar to Redux.
 
 - Challenges: Due to time contraint with other activities, I was not able to implement everything from figma design or do as more as I would like.
   One of the challenges doing this was learning new technologies such as Figma, and finding a suitable design. In addition, CORS policy issue was encountered.
