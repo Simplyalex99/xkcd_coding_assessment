@@ -1,6 +1,6 @@
 # Description
 
-A coding assessment case study based on Cyber City Comics.
+A coding assessment case study based on Cyber City Comics. To u se app please visit : https://xkdc-case-study.herokuapp.com/ 
 
 ## Technical Approach:
 
