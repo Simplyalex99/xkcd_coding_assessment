@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 50%;
-  position: sticky;
+
   width: 50%;
 }
 .comic-strip-frame {
@@ -12,6 +12,6 @@
   margin: auto;
   width: 100%;
   padding: 1.1em;
-  position: relative;
+
   height: 100%;
 }
