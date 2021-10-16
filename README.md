@@ -19,3 +19,8 @@ A coding assessment case study based on Cyber City Comics.
 - Note: If I had more time, I would implement comic page counter to show how many users have seen the comic. This could be done
   by 1) storing the data in database and adding a field "views". Then everytime the data is requested from server, and displayed on the client
   or UI we can increment its count. We could use express for this as the backend and mongoDB. Or 2) if the api already contains some form of endpoint to get views.
+  
+ ## Figma design:
+ https://www.figma.com/file/G4mT4iWY2Ny7wgzC0WhPLX/Untitled?node-id=0%3A1
+  
+  
